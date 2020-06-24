@@ -3,14 +3,23 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MedicalStoreComponent } from './dashboard/component/medical-store/medical-store.component';
+import { AddMedicineComponent } from './dashboard/component/medical-store/component/add-medicine/add-medicine/add-medicine.component';
+import { HeaderComponent } from './core/header/header.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MedicalStoreComponent,
+    AddMedicineComponent,
+    HeaderComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

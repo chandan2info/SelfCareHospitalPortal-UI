@@ -1,0 +1,45 @@
+li,ul{
+    margin: 0px;
+    padding: 0px;
+    width: 30px;
+}
+.profile-section{
+    padding-top: 3px;
+    padding-left: 20px;
+    height: 300px;
+    width:  300px;
+    
+}
+.profile-image{
+    border: 10px;
+    border-color: yellow;
+    border-radius: 10px;
+}
+
+.card-size-200{
+    width: 200px;
+    height: 200px;
+    /* background-color: #563d7c; */
+}
+.dashboard-side-panel{
+    background-color: #322348;
+    color: whitesmoke;
+    margin: 0px;
+    padding: 0px;
+}
+.side-panel-content{
+    /* margin-top: 1%;
+    margin-bottom: 1px; */
+    padding: 5%;
+    text-align: left;
+}
+
+.side-panel-content:hover {
+    cursor: pointer;
+    font-weight: 500;
+    background-color: whitesmoke;
+    color: #322348;
+  }
+  .side-panle-label{
+    margin-left: 20px;
+  }
