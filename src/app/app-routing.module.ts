@@ -11,7 +11,7 @@ const routes: Routes = [
    children:[
             {path: 'medical-store', component: MedicalStoreComponent,
             children:[
-                      {path: 'add-medicine', component: AddMedicineComponent}
+                      {path: 'medicine', component: AddMedicineComponent}
             ]
             },
     ]},

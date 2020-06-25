@@ -11,7 +11,6 @@ import { setMaxListeners } from 'process';
   styleUrls: ['./medical-store.component.css']
 })
 export class MedicalStoreComponent implements OnInit {
-
   constructor(private _router: Router,private modelService: NgbModal) { }
 
   ngOnInit(): void {

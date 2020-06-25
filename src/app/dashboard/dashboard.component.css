@@ -16,11 +16,6 @@ li,ul{
     border-radius: 10px;
 }
 
-.card-size-200{
-    width: 200px;
-    height: 200px;
-    /* background-color: #563d7c; */
-}
 .dashboard-side-panel{
     background-color: #322348;
     color: whitesmoke;
