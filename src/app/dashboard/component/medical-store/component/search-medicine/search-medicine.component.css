@@ -1,0 +1,30 @@
+.search-medicine{
+    text-align: center;
+}
+.mat-form-field  {
+    width: 250px !important;
+}
+.mat-input-element{
+    font-size: 20px;
+    color: #563d7c;
+}
+.mat-focused{
+    font-size: 18px !important;
+    color: #563d7c !important;
+}
+.mat-icon{
+    color: red;
+    font-weight: bolder;
+}
+
+.search-button{
+    width: 120px;
+    height: 32px;
+    max-width: 120px;
+    line-height: 32px;
+    /* margin-left: 10px; */
+    letter-spacing: 2.5px;
+}
+.search-button:hover{
+    cursor: pointer;
+}

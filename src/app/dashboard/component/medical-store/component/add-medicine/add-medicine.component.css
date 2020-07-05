@@ -1,0 +1,14 @@
+*{
+    color: #563d7c;
+  }
+.add-medicine-btn{
+    background-color: #563d7c;
+    color: whitesmoke;
+    margin-top: 40px;
+}
+.full-width-input{
+  width: 300px;
+  font-size: 18px !important;
+}
+
+

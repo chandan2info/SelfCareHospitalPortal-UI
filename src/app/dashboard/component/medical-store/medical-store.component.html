@@ -1,22 +1,22 @@
 <div class="card-container">
-  <div class="card card-size-100" target="_blank" rel="noopener" routerLink="medicine" routerLinkActive="active">
+  <div class="card card-size-100" routerLink="medicine" routerLinkActive="active">
     <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-    <span>Add Medicine</span>
+    <span class="font-style-color">Add Medicine</span>
   </div>
 
-  <a class="card card-size-100" target="_blank" rel="noopener" href="https://angular.io/cli">
+  <a class="card card-size-100" routerLink="view-medicine" routerLinkActive="active">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#563d7c" width="20px" height="20px"><path d="M0 0h24v24H0z" fill="none"/><path d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z"/></svg>
-    <span>View Medicine List</span>
+    <span class="font-style-color">View Medicine List</span>
   </a>
 
-  <a class="card card-size-100" target="_blank" rel="noopener" href="https://blog.angular.io/">
+  <a class="card card-size-100" routerLink="search-medicine" routerLinkActive="active">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#563d7c" width="20px" height="20px"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-    <span style="color: #563d7c;">Search Medicine</span>
+    <span class="font-style-color">Search Medicine</span>
   </a>
 
-  <a class="card card-size-100" target="_blank" rel="noopener" href="https://blog.angular.io/">
+  <a class="card card-size-100" (click)="openDialog()">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#563d7c" width="20px" height="20px"><path d="M0 0h24v24H0z" fill="none"/><path d="M15 16h4v2h-4zm0-8h7v2h-7zm0 4h6v2h-6zM3 18c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2V8H3v10zM14 5h-3l-1-1H6L5 5H2v2h12z"/></svg>
-    <span>Delete Medicine</span>
+    <span class="font-style-color">Delete Medicine</span>
   </a>
 </div> 
 <div>

@@ -1,0 +1,65 @@
+<div class="container" style="max-width: 622px !important;padding-left: 0px;margin-left: 172px;">
+  <mat-card>
+    <mat-card-content>
+      <form [formGroup]="addMedicineForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+        <h2>
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+          width="28" height="28"
+          viewBox="0 0 172 172"
+          style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M53.6425,60.5225c15.07867,-15.08225 33.57583,-33.58658 35.68642,-35.68283c13.975,-14.01083 36.68975,-14.01083 50.66475,0c14.01083,13.975 14.01083,36.68975 0,50.66475c-2.0855,2.10342 -21.20975,21.2205 -35.68283,35.68642z" fill="#563d7c"></path><path d="M109.39917,106.1025c0,0 -31.73758,31.73042 -33.89475,33.88758c-13.975,14.01083 -36.68975,14.01083 -50.66475,0c-14.01083,-13.975 -14.01083,-36.68975 0,-50.66475c0,0 17.7805,-17.77333 33.89833,-33.89475z" fill="#e91e63"></path><path d="M104.31083,111.19083c1.68417,-1.68417 3.40417,-3.40417 5.08833,-5.08833l-34.6365,-34.6365c-1.6985,1.6985 -3.397,3.397 -5.08833,5.08833zM66.3275,63.03083l-7.59667,-7.59667l-5.08833,5.08833l7.59667,7.59667c1.69133,-1.68775 3.39342,-3.38983 5.08833,-5.08833z" fill="#00838f"></path><path d="M32.42917,96.92917c-9.79683,9.79683 -9.79683,25.67817 0,35.47142c0.80983,0.80983 1.68058,1.52292 2.56925,2.20017c-4.71208,-8.81142 -3.36117,-20.01292 4.07067,-27.44475c1.42617,-1.42617 15.566,-15.566 30.60167,-30.60167l-8.43158,-8.43517c-14.1685,14.17208 -27.44475,27.44475 -28.81,28.81z" fill="#fce4ec"></path><path d="M134.60075,35.002c-0.67367,-0.88867 -1.38675,-1.75942 -2.19658,-2.57283c-9.79683,-9.79683 -25.67817,-9.79683 -35.475,0c-1.69133,1.69133 -15.92433,15.92433 -30.60167,30.60167l8.43517,8.43517c15.68783,-15.68783 30.90983,-30.90983 32.39333,-32.39333c7.43183,-7.43183 18.63333,-8.78633 27.44475,-4.07067z" fill="#e0f7fa"></path><path d="M61.23917,68.11917l8.43517,8.43517c1.69133,-1.69133 3.38983,-3.38983 5.08833,-5.08833l-8.43517,-8.43517c-1.69492,1.6985 -3.397,3.40058 -5.08833,5.08833z" fill="#80deea"></path><path d="M114.66667,71.66667c-23.74824,0 -43,19.25176 -43,43c0,23.74824 19.25176,43 43,43c23.74824,0 43,-19.25176 43,-43c0,-23.74824 -19.25176,-43 -43,-43z" fill="#b0bec5"></path><path d="M114.66667,78.83333c-19.7902,0 -35.83333,16.04313 -35.83333,35.83333c0,19.7902 16.04313,35.83333 35.83333,35.83333c19.7902,0 35.83333,-16.04313 35.83333,-35.83333c0,-19.7902 -16.04313,-35.83333 -35.83333,-35.83333z" fill="#cfd8dc"></path><path d="M140.00083,89.36833l-50.6325,50.6325c-1.1825,-1.14667 -2.2575,-2.365 -3.225,-3.69083c-0.46583,-0.60917 -0.93167,-1.25417 -1.36167,-1.89917l49.62917,-49.59333c0.645,0.39417 1.29,0.86 1.89917,1.32583c1.32583,0.9675 2.54417,2.0425 3.69083,3.225z" fill="#c0cbd1"></path><path d="M144.51583,94.9225l-49.5575,49.59333c-1.36167,-0.86 -2.6875,-1.86333 -3.90583,-2.93833c-0.57333,-0.50167 -1.14667,-1.03917 -1.68417,-1.57667l50.6325,-50.6325c0.5375,0.5375 1.075,1.11083 1.57667,1.68417c1.075,1.21833 2.0425,2.50833 2.93833,3.87z" fill="#eceff1"></path></g><g><g id="IOS_copy"><path d="M149,114.16667c0,19.70833 -16.125,35.83333 -35.83333,35.83333c-19.70833,0 -35.83333,-16.125 -35.83333,-35.83333c0,-19.70833 16.125,-35.83333 35.83333,-35.83333c19.70833,0 35.83333,16.125 35.83333,35.83333" fill="#43a047"></path><path d="M134.66667,107h-14.33333v-14.33333h-14.33333v14.33333h-14.33333v14.33333h14.33333v14.33333h14.33333v-14.33333h14.33333z" fill="#ffffff"></path></g></g></g></svg>
+          Add Medicine 
+        </h2>
+
+        <mat-form-field class="full-width-input">
+          <input matInput placeholder="Medicine name" formControlName="medicineName" required>
+          <mat-error>
+            Please provide medicine name
+          </mat-error>
+        </mat-form-field><br>
+        <mat-form-field class="full-width-input">
+          <input matInput  placeholder="Medicine quantity" formControlName="quantity" required>
+          <mat-error>
+            Please provide number of medicine
+          </mat-error>
+        </mat-form-field><br>
+        <mat-form-field class="full-width-input">
+          <input matInput  placeholder="Medicine price" formControlName="price" required>
+          <mat-error>
+            Please provide price of medicine
+          </mat-error>
+        </mat-form-field><br>
+        <button mat-raised-button color="primary" class="add-medicine-btn">Add Medicine</button>
+      </div>
+      <div class="col-2"></div>
+      </div>
+      </form>
+    
+    </mat-card-content>
+    </mat-card>
+
+
+
+<!-- <h1>Add Medicine</h1> -->
+<!-- <form>
+    <div class="form-group">
+      <label for="name">Medicine Name<span style="color: red;">*</span></label>
+      <input type="text" class="form-control" id="name" placeholder="Enter medicine name" formControlName="medicineName" >
+    </div>
+
+    <div class="form-group">
+      <label for="quantity">Quantity<span style="color: red;">*</span></label>
+      <input type="text" class="form-control" id="quantity" placeholder="Enter medicine quantity">
+    </div>
+
+    <div class="form-group">
+      <label for="price">Price<span style="color: red;">*</span></label>
+      <input type="text" class="form-control" id="price" placeholder="Enter medicine price">
+    </div>
+
+    <button type="button" class="btn add-medicine-btn" (click)="addMedicine()">Add Medicine</button>
+
+  </form> -->
+</div>

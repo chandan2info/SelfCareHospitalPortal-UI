@@ -1,0 +1,15 @@
+.mat-table {
+    background: whitesmoke;
+    max-width: 100% !important;
+    width: 100%;
+}
+.mat-header-row {
+    /* height: 56px; */
+    background-color: #563d7c;
+}
+.mat-header-cell{
+    color: white;
+}
+.mat-sort-header-arrow {
+    color: #f44336 !important;
+}

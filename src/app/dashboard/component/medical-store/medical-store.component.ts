@@ -1,9 +1,12 @@
+import { DialogBoxComponent } from './../../../shared/component/dialog-box/dialog-box.component';
+import { ViewMedicineComponent } from './component/view-medicine/view-medicine.component';
 import { Component, OnInit, NgModule } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgbModal} from '@ng-bootstrap/ng-bootstrap'
-import { AddMedicineComponent } from './component/add-medicine/add-medicine/add-medicine.component';
+import { AddMedicineComponent } from './component/add-medicine/add-medicine.component';
 import { NgbModalBackdrop } from '@ng-bootstrap/ng-bootstrap/modal/modal-backdrop';
 import { setMaxListeners } from 'process';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-medical-store',
@@ -11,26 +14,22 @@ import { setMaxListeners } from 'process';
   styleUrls: ['./medical-store.component.css']
 })
 export class MedicalStoreComponent implements OnInit {
-  constructor(private _router: Router,private modelService: NgbModal) { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+    console.log('inside -> Medical Store');
   }
 
-  addMedicine(){
-    console.log("addmedicine");
-    const modelRef = this.modelService.open(AddMedicineComponent,{
-      centered: false,
-      backdrop: 'static',
-      keyboard: false,
-      size: 'sm',
-      
+  openDialog(): void {
+    const dialogRef = this.dialog.open(DialogBoxComponent, {
+      width: '450px',
     });
-    modelRef.result.then((response)=>{
-      if(response){
-        console.log("Add medicine response");
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      if(result){
+        alert('successful');
       }
-    },error=>{
-      console.log('ERROR : add medicine ',error);
-    })
+    });
   }
 } 

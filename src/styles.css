@@ -9,6 +9,13 @@
     -moz-osx-font-smoothing: grayscale;
   }
   html{height: 100%;}
+  .font-style-color{
+    color: #563d7c;
+  }
+  .button-style-color{
+    color:white;
+    background-color: #563d7c;
+  }
 /* body{
   background-color: whitesmoke;
 } */
@@ -311,3 +318,21 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Medicine Table CSS START */
+.mat-table {
+  background: whitesmoke;
+  max-width: 100% !important;
+  width: 100%;
+}
+.mat-header-row {
+  /* height: 56px; */
+  background-color: #563d7c;
+}
+.mat-header-cell{
+  color: white;
+}
+.mat-sort-header-arrow {
+  color: #f44336 !important;
+}
+/* Medicine Table CSS END */
