@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiEndPoint: 'http://localhost:8080/'
+  apiEndPoint: 'https://medicine-inventory.cfapps.io/'
 };
 
 /*
