@@ -20,7 +20,7 @@ export class MedicalStoreService {
   }
 
   deleteMedicine(query){
-    var url = `${environment.apiEndPoint}medicine-inventory/medicine/`+query;
+    var url = `${environment.apiEndPoint}medicine-inventory/medicine/${query}`;
     return this.http.delete(url);
   }
 }

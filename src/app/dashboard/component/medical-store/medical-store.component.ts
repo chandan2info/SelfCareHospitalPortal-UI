@@ -1,3 +1,4 @@
+import { DeleteMedicineComponent } from './component/delete-medicine/delete-medicine.component';
 import { DialogBoxComponent } from './../../../shared/component/dialog-box/dialog-box.component';
 import { ViewMedicineComponent } from './component/view-medicine/view-medicine.component';
 import { Component, OnInit, NgModule } from '@angular/core';
@@ -21,7 +22,7 @@ export class MedicalStoreComponent implements OnInit {
   }
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(DialogBoxComponent, {
+    const dialogRef = this.dialog.open(DeleteMedicineComponent, {
       width: '450px',
     });
 

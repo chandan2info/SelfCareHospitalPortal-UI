@@ -1,0 +1,13 @@
+<div mat-dialog-content>
+    <p style="color: #563d7c; font-size: 17px; font-weight: 600;">Enter medicine name which you want to be delete?</p>
+    <mat-form-field>
+      <mat-label>Medicine name</mat-label>
+      <input matInput [(ngModel)]="name">
+    </mat-form-field>
+    <button mat-fab color="primary" (click)="delete()">
+        <mat-icon>delete</mat-icon>
+      </button>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()" style="color: #563d7c;">No Thanks</button>
+  </div>

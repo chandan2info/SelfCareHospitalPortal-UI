@@ -1,0 +1,17 @@
+/* .fab.mat-primary{
+    color: #563d7c !important;
+} */
+.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+    background-color: #563d7c !important;
+}
+.mat-input-element{
+    font-size: 20px;
+    color: #563d7c;
+}
+.mat-focused{
+    font-size: 18px !important;
+    color: #563d7c !important;
+}
+.mat-form-field  {
+    width: 250px !important;
+}
