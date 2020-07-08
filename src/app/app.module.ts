@@ -20,14 +20,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
 import {MatTableModule} from '@angular/material/table';
-
 import { MatSortModule } from '@angular/material/sort';
-
 import {MatIconModule} from '@angular/material/icon';
-
 import {MatDialogModule} from '@angular/material/dialog';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { EditMedicineComponent } from './dashboard/component/medical-store/component/edit-medicine/edit-medicine.component';
 
 
 @NgModule({
@@ -41,7 +39,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     ViewMedicineComponent,
     SearchMedicineComponent,
     DialogBoxComponent,
-    DeleteMedicineComponent
+    DeleteMedicineComponent,
+    EditMedicineComponent
   ],
   imports: [
     BrowserModule,
@@ -57,9 +56,14 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatIconModule,
     MatDialogModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MDBBootstrapModule.forRoot()
     
   ],
+  entryComponents: [
+    EditMedicineComponent
+  ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

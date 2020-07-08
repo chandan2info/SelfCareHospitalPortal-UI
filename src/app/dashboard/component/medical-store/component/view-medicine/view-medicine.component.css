@@ -13,3 +13,13 @@
 .mat-sort-header-arrow {
     color: #f44336 !important;
 }
+.edit-icon-style{
+    padding-left: 2%;
+}
+
+.edit-icon-style:hover{
+    cursor: pointer;
+    /* color: #563d7c !important;
+  font-size: 22px !important; */
+}
+.tr-style:hover {background-color: white;}

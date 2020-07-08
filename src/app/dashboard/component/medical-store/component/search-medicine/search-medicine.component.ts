@@ -18,6 +18,7 @@ export class SearchMedicineComponent implements OnInit {
   @ViewChild(MatSort, {static: true}) sort: MatSort;
   errorFlag=false;
   errorMessage="";
+  index:number=1;
   constructor(private medicalStoreService: MedicalStoreService) { }
 
   ngOnInit(): void {
@@ -46,7 +47,7 @@ export class SearchMedicineComponent implements OnInit {
   }
   populateMedicineDetails(medicineDetails){
     this.medicineListArray.push({
-     "ID": medicineDetails['id'],
+     "ID": this.index,
      "MEDICINE_NAME" : medicineDetails['medicineName'],
      "Price": medicineDetails['price'],
      "Quantity": medicineDetails['quantity'],

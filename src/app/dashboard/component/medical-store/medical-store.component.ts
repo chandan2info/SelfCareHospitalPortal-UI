@@ -21,9 +21,10 @@ export class MedicalStoreComponent implements OnInit {
     console.log('inside -> Medical Store');
   }
 
-  openDialog(): void {
+  openDeleteDialogBox(): void {
     const dialogRef = this.dialog.open(DeleteMedicineComponent, {
       width: '450px',
+      height: '200px'
     });
 
     dialogRef.afterClosed().subscribe(result => {

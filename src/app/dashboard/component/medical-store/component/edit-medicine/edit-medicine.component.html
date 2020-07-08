@@ -1,0 +1,37 @@
+<div class="row edit-dialog-box-container">
+  <div class="row edit-dialog-box-header">
+      <div class="col-10">
+          <mat-label class="edit-dialog-box-header-label">Update Medicine Details</mat-label> 
+      </div>
+      <div class="col-2 edit-close-icon">
+          <mdb-icon far icon="times-circle" class="edit-dialog-box-header-label close-btn-style" (click)="close()"></mdb-icon>
+      </div>
+  </div>
+  <div class="row edit-dialog-box-body">
+    <div class="col-12">
+    <form [formGroup]="editForm" autofocus>
+     <mat-dialog-content autofocus> 
+      <mat-form-field class="full-width-input" autofocus>
+          <input matInput placeholder="Medicine name" formControlName="medicineName" [value]="inputData.element.MEDICINE_NAME" autofocus>
+          <mat-error>
+            Please provide medicine name
+          </mat-error>
+        </mat-form-field><br>
+        <mat-form-field class="full-width-input">
+          <input matInput  placeholder="Medicine quantity" formControlName="quantity" [value]="inputData.element.Quantity" required>
+          <mat-error>
+            Please provide number of medicine
+          </mat-error>
+        </mat-form-field><br>
+        <mat-form-field class="full-width-input">
+          <input matInput  placeholder="Medicine price" formControlName="price" [value]="inputData.element.Price" required>
+          <mat-error>
+            Please provide price of medicine
+          </mat-error>
+        </mat-form-field><br>
+        <button mat-button type="button" class="button-style-color" (click)="updateMedicine()">Update</button>
+    </mat-dialog-content>
+  </form>
+</div>
+  </div>
+</div>

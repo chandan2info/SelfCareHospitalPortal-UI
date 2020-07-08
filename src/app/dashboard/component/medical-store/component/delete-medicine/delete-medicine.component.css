@@ -15,3 +15,13 @@
 .mat-form-field  {
     width: 250px !important;
 }
+
+.mat-dialog-content {
+    padding: 0% !important;
+    margin: 0% !important;
+    padding-left: 5% !important;
+    padding-top: 5% !important;
+}
+.mat-dialog-actions{
+    padding-left: 5%;
+}

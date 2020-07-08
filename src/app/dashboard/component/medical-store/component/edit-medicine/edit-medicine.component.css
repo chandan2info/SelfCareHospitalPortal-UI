@@ -1,0 +1,59 @@
+.row{
+    margin: 0px;
+    padding: 0px;
+}
+.edit-dialog-box-container{
+   
+    height: 100%;
+}
+.edit-dialog-box-header{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    height: 12%;
+    text-align: left;
+    background-color: #563d7c;
+    color: white;
+}
+
+.edit-dialog-box-header-label{
+    width: 100%;
+    text-align: left;
+    position: relative;
+    top: 22%;
+    font-weight: 500;
+    font-size: 20px;
+    /* padding-left: 2%; */
+}
+
+.mat-dialog-content {
+    padding: 0% !important;
+    margin: 0% !important;
+    /* padding-left: 5% !important; */
+    text-align: center;
+}
+.mat-dialog-actions{
+    padding-left: 11%;
+}
+.full-width-input{
+    width: 200px;
+    font-size: 16px !important;
+  }
+  edit-close-icon{
+      margin: 0px;
+      padding: 0px;
+  }
+  .close-btn-style{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800 !important;
+    color: red !important;
+    font-size: 26px !important;
+    text-align: right;
+  }
+  .close-btn-style:hover {
+      cursor: pointer;
+  }
+
+  .edit-dialog-box-body{
+    width: 100%;
+  }
